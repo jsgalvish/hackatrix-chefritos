@@ -59,3 +59,7 @@ ion-toolbar {
 	font-size: 28px;
 	margin-left: 20px;
 }
+
+ion-content {
+	--background: url('../src/assets/background.png') no-repeat center center / cover;
+  }
