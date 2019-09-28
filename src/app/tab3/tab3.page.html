@@ -15,50 +15,40 @@
 				</ion-grid>
 			</ion-toolbar>
 </ion-header>
-<ion-content>
-	<section>
-		<h2>Documento Pendiente</h2>
-		<header>Cédula</header>
-		<ion-button color="secondary" expand="block" shape="round" size="large" slot="end">
-				<label for="file-upload" class="upload">
-				  Upload file
-				</label>
-		</ion-button>
-		<input id="file-upload" type="file" style="display: none;"/>
-	</section>
-	<section>
+<ion-content class="ion-text-center">
+	<ion-card color="light">
 		<h2>¿Cuanto he aportado?</h2>
 		<header>Conoce tus aportes totales</header>
 		<ion-card-content>
 				<ion-grid fixed no-padding>
 					<ion-row>
 						<ion-col class="ion-text-center">
-								<ion-chip class="ion-text-center" >
+								<ion-chip  color="warning" class="ion-text-center" >
 										<h1>$778.988,980</h1>
 									</ion-chip>
 						</ion-col>
 						
 					</ion-row>
-					<ion-row >
+					<ion-row class="ion-text-center m-right" >
 							<ion-col class="ion-text-center" width = "100%" size="3">
-									<ion-chip class="ion-text-center" >
+									<ion-chip color="success" class="ion-text-center" >
 											<h1>MES</h1>
 										</ion-chip>    
 							</ion-col>
 							<ion-col class="ion-text-center" width="100%" size="3">
-									<ion-chip class="ion-text-center" >
+									<ion-chip color="success"  class="ion-text-center" >
 											<h1>AÑO</h1>
 										</ion-chip>
 							</ion-col>
 							<ion-col class="ion-text-center" width="100%" size="3">
-									<ion-chip class="ion-text-center" >
+									<ion-chip  color="success" class="ion-text-center" >
 											<h1>TOTAL</h1>
-										</ion-chip>>
+										</ion-chip>
 								</ion-col>
 						</ion-row>
-					<ion-row  >
+					<ion-row class="ion-text-center m-right" >
 						<ion-col class="ion-text-center" width = "100%" size="3">
-								<ion-chip class="ion-text-center" >
+								<ion-chip  class="ion-text-center" >
 										<h1>0,54%</h1>
 									</ion-chip>    
 						</ion-col>
@@ -70,31 +60,42 @@
 						<ion-col class="ion-text-center" width="100%" size="3">
 								<ion-chip class="ion-text-center" >
 										<h1>83.1%</h1>
-									</ion-chip>>
+									</ion-chip>
 							</ion-col>
 					</ion-row>
 				</ion-grid>
 			  </ion-card-content>
 		<div class="ion-text-center">
-		<ion-button size="large" color="secondary" >Aportes</ion-button>
+		<ion-button size="large"   shape="round" color="primary" >Aportes</ion-button>
 	</div>
-	</section>
-	<section>
+	</ion-card>
+	<ion-card color="light">
 		<h2>Gestiona tu Pensión</h2>
 		<header>Aprende sobre los régimenes</header>
 		<p>RPM: Régimen de Prima Media y RAI: Régimen de Ahorro Individual</p>
-		<ion-button size="large" color="secondary">Semanas para Pensión</ion-button>
-		<ion-button size="large" color="tertiary">Pensiónate</ion-button>
-	</section>
-	<section>
+		<ion-button size="large"  shape="round" color="secondary">Semanas para Pensión</ion-button>
+		<ion-button size="large" shape="round" color="primary">Pensiónate</ion-button>
+	</ion-card>
+	<ion-card color="light">
 		<h2>Traslados</h2>
 		<p>Cambiate de fondo</p>
-		<ion-button size="large" color="secondary">Gestiona Traslados</ion-button>
-	</section>
-	<section>
+		<ion-button size="large"  shape="round" color="primary">Gestiona Traslados</ion-button>
+	</ion-card>
+	<ion-card color="light">
 		<h2>Seguros y Beneficiarios</h2>
 		<p>Conoce las diferentes opciones</p>
-		<ion-button size="large" color="secondary">Servicios</ion-button>
-	</section>
+		<ion-button size="large" shape="round" color="primary">Servicios</ion-button>
+	</ion-card>
+
+	<ion-card color="light">
+			<h2>Documento Pendiente</h2>
+			<p>Certificados de pension adicionales</p>
+			<ion-button color="primary"  shape="round"  size="large" >
+					<label for="file-upload" class="upload">
+						Sube Archivo
+					</label>
+			</ion-button>
+			<input id="file-upload" type="file" style="display: none;"/>
+		</ion-card>
 </ion-content>
 
