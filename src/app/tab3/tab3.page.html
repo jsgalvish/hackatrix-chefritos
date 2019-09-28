@@ -15,10 +15,37 @@
 				</ion-grid>
 			</ion-toolbar>
 </ion-header>
-<ion-button color="secondary" expand="block" shape="round" size="large" slot="end">
-  <label for="file-upload" class="upload">
-    Upload file
-  </label>
-</ion-button>
-<input id="file-upload" type="file" style="display: none;"/>
-<ion-content></ion-content>
+<ion-content>
+	<section>
+		<h2>Documento Pendiente</h2>
+		<header>Cédula</header>
+		<ion-button color="secondary" expand="block" shape="round" size="large" slot="end">
+				<label for="file-upload" class="upload">
+				  Upload file
+				</label>
+		</ion-button>
+		<input id="file-upload" type="file" style="display: none;"/>
+	</section>
+	<section>
+		<h2>¿Cuanto he aportad?</h2>
+		<header>Conoce tus aportes totales</header>
+		<ion-button size="large" color="secondary">Aportes</ion-button>
+	</section>
+	<section>
+		<h2>Gestiona tu Pensión</h2>
+		<header>Aprende sobre los régimenes</header>
+		<p>RPM: Régimen de Prima Media y RAI: Régimen de Ahorro Individual</p>
+		<ion-button size="large" color="secondary">Semanas para Pensión</ion-button>
+		<ion-button size="large" color="tertiary">Pensiónate</ion-button>
+	</section>
+	<section>
+		<h2>Traslados</h2>
+		<p>Cambiate de fondo</p>
+		<ion-button size="large" color="secondary">Gestiona Traslados</ion-button>
+	</section>
+	<section>
+		<h2>Seguros y Beneficiarios</h2>
+		<p>Conoce las diferentes opciones</p>
+		<ion-button size="large" color="secondary">Servicios</ion-button>
+	</section>
+</ion-content>
