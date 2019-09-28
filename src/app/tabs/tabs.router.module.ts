@@ -48,6 +48,16 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'edu',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../edu/edu.module').then(m => m.EduPageModule)
+          }
+        ]
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'
